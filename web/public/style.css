@@ -1,0 +1,160 @@
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 system-ui,-apple-system,sans-serif;color:#173c35;background:#f4faf8}header{background:#fff;border-bottom:1px solid #e2efea}.wrap{width:min(1100px,calc(100% - 40px));margin:auto}.header,.toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px}.header{height:76px}.brand{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:700}.brand b{display:grid;place-items:center;background:#138d6e;color:#fff;border-radius:10px;width:38px;height:38px}.header span,.eyebrow{color:#178c70}.hero{display:grid;grid-template-columns:1fr 420px;align-items:center;gap:70px;min-height:620px}h1{font-size:42px;line-height:1.2;margin:12px 0}h2{font-size:22px;margin:0}.eyebrow{font-weight:700}.panel{background:white;border:1px solid #e0eee8;border-radius:20px;padding:30px;box-shadow:0 15px 45px #205d3d0d}.muted{color:#71877f;font-size:14px}label{display:block;font-weight:600;margin:16px 0}input{display:block;width:100%;margin-top:6px;padding:12px;border:1px solid #d5e5df;border-radius:9px;font:inherit}button{border:0;background:#118c6c;color:white;padding:12px 20px;border-radius:9px;font:inherit;cursor:pointer}form button{width:100%}.secondary{background:#e6f4ee;color:#176d56}button:disabled{opacity:.55;cursor:wait}#workspace{padding:50px 0}.exam{border-top:1px solid #e6efeb;padding:17px 0}.exam strong{display:block}#status{color:#b25737}footer{border-top:1px solid #e1ede8;padding:25px 0;color:#84968f;font-size:13px}@media(max-width:760px){.hero{grid-template-columns:1fr;gap:20px;padding:45px 0;min-height:0}h1{font-size:34px}.panel{padding:22px}}
+
+[hidden]{display:none!important}
+dialog{border:1px solid #d8e9e1;border-radius:18px;padding:25px;width:min(480px,90vw);color:#173c35}dialog::backdrop{background:#173c3570}.detail-header{display:flex;align-items:center;justify-content:space-between}
+/* Match the reference portal's current quiet, white login layout. */
+@font-face{font-family:FusionPixel;src:url('./fonts/fusion-pixel-12px-zh-hans.woff2') format('woff2');font-style:normal;font-weight:400;font-display:swap}
+body,button,input{font-family:FusionPixel,-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif}
+body{background:#fff;color:#202020;font-size:12px;line-height:1.65}.wrap{width:min(740px,calc(100% - 48px))}header{display:none}main.wrap{min-height:calc(100vh - 125px);padding:74px 0 80px}.hero{display:block;max-width:520px;margin:0 auto;padding:0;min-height:0}.hero>.eyebrow,.hero .eyebrow{display:block;margin:0 0 16px;color:#999;font-size:10px;font-weight:400}.hero h1{margin:0;font-size:23px;font-weight:400;letter-spacing:.02em}.hero>div>p:not(.eyebrow){margin:9px 0 0;color:#999;font-size:11px}.hero .panel{margin:0;padding:57px 0 0;border:0;border-radius:0;box-shadow:none;background:transparent}.hero .panel h2{font-size:12px;font-weight:400}.hero .panel>.muted{margin:5px 0 26px;color:#aaa;font-size:11px}.hero form label{display:grid;grid-template-columns:minmax(96px,30%) minmax(0,1fr);align-items:center;gap:10px;margin:0 0 12px;color:#777;font-size:11px;font-weight:400}.hero form input{height:36px;margin:0;padding:8px 10px;border:0;border-radius:0;background:#f6f6f6;color:#222;font-size:12px}.hero form input:focus{outline:2px solid #777;outline-offset:1px}.hero form button{width:auto;min-height:36px;margin-left:calc(30% + 10px);padding:4px 0;border:0;border-radius:0;background:transparent;color:#222;font-size:12px;text-align:left}.hero form>.muted{margin-left:calc(30% + 10px);font-size:10px;color:#999}.hero form button:hover{text-decoration:underline;text-underline-offset:4px}footer.wrap{border:0;padding:16px 0 28px;color:#aaa;font-size:10px}.secondary{background:#f6f6f6;color:#333;border-radius:0}.panel{border-radius:0;box-shadow:none;border-color:#e8e8e8}.exam{border-color:#eee}dialog{border-radius:0;color:#222}.eyebrow{color:#888}h1,h2{font-weight:400}
+@media(max-width:760px){.hero{display:block;padding:0}.hero h1{font-size:23px}.hero .panel{padding:50px 0 0}.hero form label{grid-template-columns:minmax(80px,30%) minmax(0,1fr)}}
+.hero .password-row{position:relative;min-width:0}.hero .password-row input{width:100%;padding-right:54px}.hero form #toggle-password{position:absolute;top:0;right:10px;min-height:36px;margin:0;padding:0;color:#777;font-size:10px}
+/* Continue the reference portal's quiet treatment inside the exam workspace. */
+#workspace{padding:0}#workspace h1{font-size:22px;line-height:1.3;margin:0;font-weight:400}#workspace h2{font-size:14px;font-weight:400}#workspace .panel{border:0;padding:20px 0;background:transparent}#workspace .toolbar{margin-top:12px}#workspace>.toolbar{margin-top:0;margin-bottom:30px;align-items:flex-start}#workspace .eyebrow{font-size:10px;color:#999;margin:0 0 13px}#workspace .muted{font-size:11px;color:#999}#workspace .secondary,dialog .secondary{min-height:30px;padding:4px 0;margin-right:18px;border:0;background:transparent;color:#333;font-size:12px;text-align:left}#workspace .secondary:hover,dialog .secondary:hover{text-decoration:underline;text-underline-offset:4px}.exam{display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:baseline;gap:22px;padding:13px 0;border:0}.exam strong{font-size:12px;font-weight:400;overflow-wrap:anywhere}dialog{width:min(560px,calc(100% - 40px));max-height:75vh;padding:32px 36px;border:0;background:#fff;box-shadow:0 0 32px 12px #0000001f}dialog::backdrop{background:transparent}dialog h2{font-size:15px;font-weight:400}dialog p{font-size:12px;line-height:1.75}dialog button:not(.secondary){border-radius:0;font-size:12px}@media(max-width:760px){.exam{grid-template-columns:minmax(0,1fr) auto;gap:12px}dialog{padding:25px 23px}}
+
+/* Login form and independent history disclosure. */
+body,button,input,summary{font-family:'PingFang SC','Microsoft YaHei',system-ui,-apple-system,BlinkMacSystemFont,sans-serif}
+body{min-height:100vh;display:flex;flex-direction:column}
+main.wrap{flex:1;width:min(740px,calc(100% - 48px))}
+main.wrap:has(#entry:not([hidden])){display:flex;align-items:center;justify-content:center;padding:48px 0}
+.hero{width:min(520px,100%);margin:0}
+.hero .panel{padding:0}
+.hero form button[type=submit]{margin-top:4px}
+.hero #status{min-height:1.65em;margin:18px 0 0 calc(30% + 10px);font-size:11px;color:#b25737;overflow-wrap:anywhere}
+footer.wrap{width:min(520px,calc(100% - 48px));margin:0 auto;padding:16px 0 28px}
+#workspace-status{color:#b25737}
+#history-results{margin:16px 0}
+#history-results summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px;width:max-content;max-width:100%}
+#history-results summary::-webkit-details-marker{display:none}
+#history-results summary::before{content:'+';font-size:16px;line-height:1}
+#history-results[open] summary::before{content:'−'}
+#history-results .history-list{padding-left:19px;color:#777;font-size:11px}
+#history-results .history-list p{margin:6px 0;font-size:11px}
+@media(max-width:760px){.hero #status{margin-left:calc(30% + 10px)}}
+
+/* Examination list */
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+#workspace>.toolbar{align-items:center;margin:0 0 32px}
+#workspace>.toolbar h1{font-size:22px;line-height:1.3}
+#workspace>.toolbar #logout{margin:0;color:#777}
+#workspace .panel{padding:0}
+#workspace .exam-toolbar{margin:0 0 12px;align-items:center}
+.exam-tabs{display:flex;align-items:center;gap:26px}
+#workspace .exam-tabs button{position:relative;min-height:36px;margin:0;padding:4px 0;color:#999}
+#workspace .exam-tabs button[aria-pressed=true]{color:#222;font-weight:600}
+#workspace .exam-tabs button[aria-pressed=true]::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:#333}
+#workspace .exam-toolbar #refresh{margin:0;color:#777}
+#workspace .exam{grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:22px;padding:16px 0;border:0}
+#workspace .exam strong{font-size:12px;line-height:1.65}
+.exam-clickable{cursor:pointer}
+.exam-clickable:hover strong{text-decoration:underline;text-underline-offset:4px}
+.exam-status{color:#999;font-size:11px;white-space:nowrap}
+
+#workspace button:focus-visible{outline:2px solid #666;outline-offset:4px}
+@media(max-width:600px){
+ #workspace>.toolbar{margin-bottom:26px}
+ #workspace .exam{grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;padding:14px 0}
+ #workspace .exam strong{grid-column:1 / -1}
+ 
+ .exam-status{grid-column:1;grid-row:2}
+}
+
+/* Keep the reference portal's restrained motion and reduced-motion support. */
+@media (prefers-reduced-motion: no-preference){
+ @keyframes text-arrive{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+ @keyframes panel-arrive{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+ #workspace>.toolbar{animation:text-arrive .55s cubic-bezier(.22,1,.36,1) both}
+ #entry .panel,#workspace>.panel{animation:text-arrive .6s .08s cubic-bezier(.22,1,.36,1) both}
+ dialog[open]{animation:panel-arrive .22s ease-out both}
+ .hero input{transition:background-color .2s ease,outline-color .2s ease}
+ .hero button,#workspace button,dialog button{transition:color .2s ease,opacity .2s ease,transform .2s ease}
+ .hero button:hover,#workspace button:hover,dialog button:hover{transform:translateX(3px)}
+ #close-details:hover{transform:none}
+ .hero button:active,#workspace button:active,dialog button:active{opacity:.58}
+}
+@media (prefers-reduced-motion: reduce){
+ *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}
+}
+
+/* The reference portal uses motion feedback without decorative underlines. */
+.hero form button:hover,#workspace .secondary:hover,dialog .secondary:hover,
+.exam-clickable:hover strong{text-decoration:none}
+#workspace .exam-tabs button[aria-pressed=true]::after{display:none}
+.exam-clickable:focus-visible{outline:2px solid #666;outline-offset:4px}
+
+/* Keep browser autofill fields visually consistent with the neutral form. */
+#entry input{background-color:#f6f6f6;color:#222;caret-color:#222}
+#entry input:-webkit-autofill,
+#entry input:-webkit-autofill:hover,
+#entry input:-webkit-autofill:focus,
+#entry input:-webkit-autofill:active,
+#entry input:autofill{
+ -webkit-text-fill-color:#222!important;
+ -webkit-box-shadow:0 0 0 1000px #f6f6f6 inset!important;
+ box-shadow:0 0 0 1000px #f6f6f6 inset!important;
+ background-color:#f6f6f6!important;
+ caret-color:#222!important;
+}
+#workspace>.toolbar h1{font-weight:300}
+
+/* Shared type scale and spacing for the exam portal. */
+body{font-size:14px;line-height:1.6;font-weight:400}
+button,input{font-size:inherit}
+.hero form label{margin-bottom:16px;font-size:14px;font-weight:400;line-height:1.6}
+.hero form input{height:40px;font-size:14px;line-height:1.6}
+.hero form button[type=submit]{min-height:40px;font-size:14px;font-weight:400}
+.hero form #toggle-password{font-size:12px}
+.hero #status,#workspace-status{font-size:12px;line-height:1.6}
+footer.wrap{font-size:12px;line-height:1.6}
+#workspace>.toolbar{margin-bottom:20px}
+#workspace>.toolbar h1{font-size:22px;line-height:1.4;font-weight:400}
+#workspace h2{font-size:18px;line-height:1.5;font-weight:600}
+#workspace .panel{padding:0}
+#workspace .muted{font-size:12px;line-height:1.6}
+#workspace .secondary,dialog .secondary{font-size:14px;line-height:1.6;font-weight:400}
+#workspace .exam-toolbar{margin-bottom:16px}
+#workspace .exam{padding:16px 0}
+#workspace .exam strong{font-size:14px;line-height:1.6;font-weight:400}
+.exam-status{font-size:12px;line-height:1.6}
+dialog h2{font-size:20px;line-height:1.4;font-weight:600}
+dialog p{margin:16px 0;font-size:14px;line-height:1.6;font-weight:400}
+#history-results summary{font-size:14px;line-height:1.6}
+#history-results .history-list{font-size:12px;line-height:1.6}
+#history-results .history-list p{margin:8px 0;font-size:12px;line-height:1.6}
+@media(max-width:600px){
+ #workspace>.toolbar{margin-bottom:16px}
+ #workspace .exam-toolbar{margin-bottom:16px}
+ #workspace .exam{padding:16px 0}
+}
+
+/* Embedded entry shows only the matched exam detail frame. */
+html.exam-frame-mode,html.exam-frame-mode body{width:100%;height:100%;min-height:100%;overflow:hidden;background:#fff}
+html.exam-frame-mode body{display:block;margin:0}
+html.exam-frame-mode header,html.exam-frame-mode #entry,html.exam-frame-mode #workspace,html.exam-frame-mode footer{display:none!important}
+html.exam-frame-mode main.wrap{width:100%;height:100%;min-height:100%;margin:0;padding:0;flex:none}
+html.exam-frame-mode dialog[open]{position:fixed;inset:0;width:100%;height:100%;max-width:none;max-height:none;margin:0;padding:clamp(18px,4vw,36px);overflow:auto;border:0;border-radius:0;box-shadow:none;background:#fff}
+html.exam-frame-mode dialog::backdrop{background:transparent}
+html.exam-frame-mode .detail-header{align-items:center;margin-bottom:8px}
+html.exam-frame-mode #close-details{display:none!important}
+html.exam-frame-mode dialog p{max-width:760px}
+html.exam-frame-mode,html.exam-frame-mode body,html.exam-frame-mode dialog[open]{background:#fff}
+.exam-match-choice{display:block;width:100%;margin:10px 0;padding:10px 0;text-align:left;overflow-wrap:anywhere}
+@media(max-width:600px){html.exam-frame-mode dialog[open]{padding:20px 18px}.exam-match-choice{margin:8px 0}}
+
+html.exam-frame-mode dialog[open]{padding-right:52px}
+
+html[data-theme="dark"],html[data-theme="dark"] body,html[data-theme="dark"].exam-frame-mode,html[data-theme="dark"].exam-frame-mode body,html[data-theme="dark"].exam-frame-mode dialog[open]{background:#242424;color:#eee;color-scheme:dark}
+html[data-theme="dark"] dialog,html[data-theme="dark"] #details{background:#242424;color:#eee}
+html[data-theme="dark"] .muted,html[data-theme="dark"] #history-results{color:#aaa}
+
+html.exam-frame-mode dialog[open]{font-size:14px;line-height:1.6;padding:24px 52px 24px 24px;outline:none;border:0}html.exam-frame-mode dialog h2{font-size:16px;line-height:1.5;font-weight:600}html.exam-frame-mode dialog p{font-size:14px;line-height:1.6;margin:12px 0}html.exam-frame-mode #history-results summary,html.exam-frame-mode dialog button{font-size:14px}html.exam-frame-mode dialog:focus-visible{outline:none}
+html[data-theme="dark"] dialog .exam-match-choice,html[data-theme="dark"] dialog .exam-match-choice:hover{color:#eee;background:transparent}
+html,body,dialog,#details,.exam-match-choice{transition:background-color .24s ease,color .24s ease}
+@media(prefers-reduced-motion:reduce){html,body,dialog,#details,.exam-match-choice{transition:none}}
+
+@font-face{font-family:QuanPixelCJK;src:url('/assets/fonts/quan-pixel-8px-square.woff2') format('woff2');font-display:swap;unicode-range:U+3400-4DBF,U+4E00-9FFF,U+F900-FAFF}
+html.exam-frame-mode body,html.exam-frame-mode dialog,html.exam-frame-mode dialog button{font-family:QuanPixelCJK,"PingFang SC","Microsoft YaHei",system-ui,sans-serif}
+html.exam-frame-mode dialog[open],html.exam-frame-mode dialog h2,html.exam-frame-mode dialog p,html.exam-frame-mode dialog button,html.exam-frame-mode #history-results summary,html.exam-frame-mode #history-results .history-list{font-size:16px;line-height:1.6}
+@font-face{font-family:QuanPixelAll;src:url('/assets/fonts/quan-pixel-8px-square.woff2') format('woff2');font-display:swap}
+html.exam-frame-mode #history-results,html.exam-frame-mode #history-results summary,html.exam-frame-mode #history-results .history-list,html.exam-frame-mode #history-results .history-list p{font-family:QuanPixelAll,"PingFang SC",system-ui,sans-serif;font-size:16px;font-weight:400;line-height:1.6}
+
+html.exam-frame-mode body,html.exam-frame-mode dialog,html.exam-frame-mode dialog button,html.exam-frame-mode #history-results,html.exam-frame-mode #history-results summary,html.exam-frame-mode #history-results .history-list,html.exam-frame-mode #history-results .history-list p{font-family:QuanPixelAll,"PingFang SC","Microsoft YaHei",system-ui,sans-serif}
